@@ -1,14 +1,19 @@
-import './App.css'
+import { useState, useEffect } from 'react';
+import Home from './pages/Home';
+import HomeReveal from './components/HomeReveal';
 
-function App() {
-  
+export default function App() {
+  const [stage, setStage] = useState('intro'); // 'intro' → 'home'
+
+  useEffect(() => {
+    const totalRevealDuration = 6000; // splash + lines
+    const timer = setTimeout(() => setStage('home'), totalRevealDuration);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
-    <h1 className='text-xs text-red-500 font-serif'>Hello World</h1>
-    <h1 className='text-sm text-red-500 font-sans'>Hello World</h1>     
-     
-    </>
-  )
+    <div>
+      {stage === 'intro' ? <HomeReveal /> : <Home />}
+    </div>
+  );
 }
-
-export default App
