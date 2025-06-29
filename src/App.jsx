@@ -1,19 +1,20 @@
-import { useState, useEffect } from 'react';
-import Home from './pages/Home';
-import HomeReveal from './components/HomeReveal';
+import React, { useState } from 'react';
+import SplashCurtain from './components/SplashCurtain';
+import './App.css'
 
-export default function App() {
-  const [stage, setStage] = useState('intro'); // 'intro' → 'home'
-
-  useEffect(() => {
-    const totalRevealDuration = 6000; // splash + lines
-    const timer = setTimeout(() => setStage('home'), totalRevealDuration);
-    return () => clearTimeout(timer);
-  }, []);
+function App() {
+  const [showSplash, setShowSplash] = useState(true);
 
   return (
-    <div>
-      {stage === 'intro' ? <HomeReveal /> : <Home />}
-    </div>
+    <>
+      {showSplash && <SplashCurtain onComplete={() => setShowSplash(false)}  />}
+
+      <main className="min-h-screen bg-white text-black p-10">
+        <h1 className="text-4xl font-bold">🏠 Home Page</h1>
+        <p>This content is always behind the splash screen.</p>
+      </main>
+    </>
   );
 }
+
+export default App;
