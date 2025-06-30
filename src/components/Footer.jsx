@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h4 className="text-xl font-semibold text-white mb-4">
-              Obimba Integrated
+              Obimba Integrated Services
             </h4>
             <p className="text-sm">
               Delivering excellence in construction and design since 2010.
@@ -49,11 +49,11 @@ export default function Footer() {
               Contact Us
             </h4>
             <p className="text-sm mb-4">
-              1234 Builder’s Lane
+              001Ugwuorji Road Amaekpu
               <br />
-              Lagos, Nigeria
+              Ohafia, Abia State Nigeria
               <br />
-              +234 800 000 0000
+              +234 706 199 1053
               <br />
               info@obimba.com
             </p>
