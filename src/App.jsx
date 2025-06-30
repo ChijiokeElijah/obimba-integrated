@@ -6,6 +6,7 @@ import Hero_image from "../src/images/Hero_image.jpg";
 import project_17 from "../src/images/project_17.jpg";
 import project_22 from "../src/images/project_22.jpg";
 import Projects from "./components/Projects";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -85,7 +86,7 @@ function App() {
                 About
               </a>
               <a href="#" className="block text-gray-700 hover:text-blue-600">
-                Services
+                Projects
               </a>
               <a href="#" className="block text-gray-700 hover:text-blue-600">
                 Contact
@@ -143,6 +144,7 @@ function App() {
           <Projects />
         </section>
       </main>
+      <ContactForm />
     </>
   );
 }
