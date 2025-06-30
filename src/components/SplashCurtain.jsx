@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import logo from '../images/logo.png'
 
 const SplashCurtain = ({ onComplete }) => {
   const [phase, setPhase] = useState('welcome');
@@ -24,9 +25,10 @@ const SplashCurtain = ({ onComplete }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center text-white pointer-events-none">
       {/* Welcome message with fade-out */}
       {(phase === 'welcome' || phase === 'slide') && (
-        <div className={`absolute inset-0 bg-black flex items-center justify-center transition-opacity duration-500 ${phase === 'slide' ? 'opacity-0' : 'opacity-100'}`}>
-          <h1 className={`text-4xl font-bold transition-all duration-500 ${phase === 'slide' ? 'scale-90 blur-sm' : 'scale-100'}`}>
-            Welcome to My Site
+        <div className={`absolute inset-0 bg-blue-950 flex flex-col items-center justify-center transition-opacity duration-500 ${phase === 'slide' ? 'opacity-0' : 'opacity-100'}`}>
+          <img src={logo} className='h-50 w-50'/>
+          <h1 className={`text-2xl font-bold transition-all duration-500 ${phase === 'slide' ? 'scale-90 blur-sm' : 'scale-100'}`}>
+            OBIMBA INTREGRATED SERVICES
           </h1>
         </div>
       )}
