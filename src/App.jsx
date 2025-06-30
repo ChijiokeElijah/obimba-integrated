@@ -7,6 +7,7 @@ import project_17 from "../src/images/project_17.jpg";
 import project_22 from "../src/images/project_22.jpg";
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -16,7 +17,7 @@ function App() {
     <>
       {showSplash && <SplashCurtain onComplete={() => setShowSplash(false)} />}
 
-      <main className="min-h-screen text-black p-10">
+      <main className=" text-black p-10 bg-gray">
         <nav className="bg-transparent shadow-md fixed top-0 left-0 w-full z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
@@ -140,11 +141,12 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="min-h-screen flex-1 overflow-y-auto">
           <Projects />
+          <ContactForm />
+          <Footer />
         </section>
       </main>
-      <ContactForm />
     </>
   );
 }
