@@ -4,10 +4,10 @@ import "./App.css";
 import logo from "../src/images/logo.png";
 import Hero_image from "../src/images/Hero_image.jpg";
 import project_17 from "../src/images/project_17.jpg";
-import project_22 from "../src/images/project_22.jpg";
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -37,10 +37,10 @@ function App() {
                   About
                 </a>
                 <a href="#" className="text-gray-700 hover:text-blue-600">
-                  Services
+                  Our Projects
                 </a>
                 <a href="#" className="text-gray-700 hover:text-blue-600">
-                  Contact
+                  Contact Us
                 </a>
               </div>
 
@@ -124,10 +124,10 @@ function App() {
                 <div className=" flex w-8 h-0.5 bg-white top-20 font-semibold" />
                 <span className="text-white font-semibold">Our Story</span>
               </div>
-              <h1 className="text-white text-xl text-justify">
+              <h1 className="text-white text-xl text-justify sm:text-2xl">
                 We redefine what's possible
               </h1>
-              <p className="text-white pt-3 text-sm text-left">
+              <p className="text-white pt-3 text-sm text-left sm:text-xl">
                 At Obimba Integrated Services, we bring your vision to life with
                 unmatched craftsmanship, integrity, and over a decade of proven
                 excellence in commercial and residential building.
@@ -142,6 +142,7 @@ function App() {
           </div>
         </section>
         <section className="min-h-screen flex-1 overflow-y-auto">
+          <AboutSection />
           <Projects />
           <ContactForm />
           <Footer />

@@ -1,3 +1,4 @@
+import CEO from "../images/CEO.jpg"
 export default function AboutSection() {
   return (
     <section className="py-16 bg-white">
@@ -38,7 +39,7 @@ export default function AboutSection() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
           >
             Get in Touch
           </a>
@@ -47,10 +48,12 @@ export default function AboutSection() {
         {/* Illustration/Image */}
         <div className="flex-1">
           <img
-            src="/images/about-us.jpg"
+            src={CEO}
             alt="Our Team at work"
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
+            className="w-full h-60% object-cover rounded-lg shadow-lg"
           />
+          <h2 className="text-2xl">Engr. Obinna Mba</h2>
+          <h3>CEO</h3>
         </div>
       </div>
     </section>

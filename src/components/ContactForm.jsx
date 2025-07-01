@@ -85,12 +85,12 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition disabled:opacity-50"
+              className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition disabled:opacity-50"
             >
               {status === "sending" ? "Sending…" : "Send Message"}
             </button>
             {status === "sent" && (
-              <span className="text-green-600">
+              <span className="text-red-950">
                 Thank you! We’ll be in touch.
               </span>
             )}
