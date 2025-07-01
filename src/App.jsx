@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
+import Review from "./components/Review";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -17,8 +18,8 @@ function App() {
     <>
       {showSplash && <SplashCurtain onComplete={() => setShowSplash(false)} />}
 
-      <main className=" text-black p-10 bg-gray">
-        <nav className="bg-transparent shadow-md fixed top-0 left-0 w-full z-50">
+      <main className=" text-black p-10 ">
+        <nav className="bg-blue-950 shadow-md fixed top-0 left-0 w-full z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
@@ -29,17 +30,29 @@ function App() {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex space-x-6">
-                <a href="#" className="text-gray-700 hover:text-blue-600">
+              <div className="hidden md:flex space-x-6 ">
+                <a
+                  href="#"
+                  className="text-white font-bold hover:text-blue-600"
+                >
                   Home
                 </a>
-                <a href="#" className="text-gray-700 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-white font-bold hover:text-blue-600"
+                >
                   About
                 </a>
-                <a href="#" className="text-gray-700 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-white font-bold hover:text-blue-600"
+                >
                   Our Projects
                 </a>
-                <a href="#" className="text-gray-700 hover:text-blue-600">
+                <a
+                  href="#"
+                  className="text-white font-bold hover:text-blue-600"
+                >
                   Contact Us
                 </a>
               </div>
@@ -48,7 +61,7 @@ function App() {
               <div className="md:hidden flex items-center">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="text-gray-700 focus:outline-none"
+                  className="text-white focus:outline-none"
                 >
                   <svg
                     className="h-6 w-6"
@@ -79,7 +92,7 @@ function App() {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="md:hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+            <div className="md:hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow space-y-4">
               <a href="#" className="block text-gray-700 hover:text-blue-600">
                 Home
               </a>
@@ -87,10 +100,10 @@ function App() {
                 About
               </a>
               <a href="#" className="block text-gray-700 hover:text-blue-600">
-                Projects
+                Our Projects
               </a>
               <a href="#" className="block text-gray-700 hover:text-blue-600">
-                Contact
+                Contact Us
               </a>
             </div>
           )}
@@ -144,6 +157,7 @@ function App() {
         <section className="min-h-screen flex-1 overflow-y-auto">
           <AboutSection />
           <Projects />
+          <Review />
           <ContactForm />
           <Footer />
         </section>

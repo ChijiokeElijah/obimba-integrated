@@ -39,7 +39,7 @@ export default function AboutSection() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
+            className="inline-block bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition"
           >
             Get in Touch
           </a>
@@ -52,8 +52,10 @@ export default function AboutSection() {
             alt="Our Team at work"
             className="w-full h-60% object-cover rounded-lg shadow-lg"
           />
-          <h2 className="text-2xl">Engr. Obinna Mba</h2>
-          <h3>CEO</h3>
+          <div className="flex flex-col items-center justify-center">
+            <h2 className="text-2xl">Engr. Obinna Mba</h2>
+            <h3>CEO, Obimba Integrated Services</h3>
+          </div>
         </div>
       </div>
     </section>
