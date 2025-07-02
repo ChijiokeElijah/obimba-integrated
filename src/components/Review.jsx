@@ -1,89 +1,79 @@
 import React from 'react'
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Kalu from '../images/Kalu.jpg'
+
 
 export default function Review() {
     const reviews = [
       {
         id: 1,
         name: "Kalu Ndukwe U.",
-        role: "Homeowner",
+        role: "Home owner",
         quote:
-          "Your hard work, dedication, and expertise are truly impressive. Keep up the fantastic work! ",
-    
+          "Their hard work, dedication, and expertise are truly impressive. Keep up the fantastic work! ",
       },
       {
         id: 2,
-        name: "Tunde B.",
+        name: "Okechi Nwafor",
         role: "Business Owner",
         quote:
           "From concept to completion, their craftsmanship and attention to detail blew me away.",
-        
       },
       {
         id: 3,
-        name: "Ngozi E.",
-        role: "Project Manager",
+        name: "Wilson Menthol",
+        role: "Property Manager",
         quote:
-          "Reliable, efficient, and innovative. Obimba Integrated delivers on every promise.",
-        
+          "Working with your team has been a game-changer for our brand. The professionalism and attention to detail were exceptional!",
       },
       {
         id: 4,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "IK Nkele",
+        role: "Home Owner",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-       
+          "Their attention to detail and commitment to quality made our dream home a reality. Truly exceptional craftsmanship..",
       },
       {
         id: 5,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "Alexis Ike",
+        role: "Property Manager",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-      
+          "From design to delivery, they handled our commercial project with precision, professionalism, and on-time execution.",
       },
       {
         id: 6,
-        name: "David K.",
+        name: "Chibuike Ben",
         role: "Real Estate Developer",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-        
+          "We were impressed by their transparency, communication, and the quality of the materials used. Highly recommended!",
       },
       {
         id: 7,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "Tymgotel Sunny K.",
+        role: "Estate manager",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-       
+          "Their team turned our vision into a stunning residential property that exceeds expectations. A pleasure to work with.",
       },
       {
         id: 8,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "Nnanna Echeme",
+        role: "Business Owner",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-      
+          "As a business owner, I appreciated how efficiently they managed our office building project. Everything was delivered ahead of schedule.",
       },
       {
         id: 9,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "Comr. David Orji",
+        role: "Home owner",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-        
+          "They made the entire construction process smooth and stress-free. Their team is reliable, skilled, and courteous.",
       },
       {
         id: 10,
-        name: "David K.",
-        role: "Real Estate Developer",
+        name: "Iyke Gin",
+        role: "Business Owner",
         quote:
-          "They handled our commercial complex flawlessly. Highly recommend them for any serious construction project.",
-       
+          "What stood out was their ability to blend function and aesthetics—our commercial space is both beautiful and practical.",
       },
     ];
     const scrollRef = useRef(null);

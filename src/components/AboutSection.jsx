@@ -1,8 +1,10 @@
 import CEO from "../images/CEO.jpg"
+import { Link } from "react-scroll";
+
 export default function AboutSection() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+    <section name="about" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="flex-1 space-y-6">
           <h2 className="text-3xl font-bold text-gray-800">
@@ -37,20 +39,19 @@ export default function AboutSection() {
             we turn your vision into reality—on time, on budget, and beyond
             expectations.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition"
-          >
-            Get in Touch
-          </a>
+          <Link to="contact">
+            <p className="inline-block bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition">
+              Get in Touch
+            </p>
+          </Link>
         </div>
 
         {/* Illustration/Image */}
         <div className="flex-1">
           <img
             src={CEO}
-            alt="Our Team at work"
-            className="w-full h-60% object-cover rounded-lg shadow-lg"
+            alt="Our CEO"
+            className="w-full h-40% object-cover md:h-40% rounded-lg shadow-lg"
           />
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-2xl">Engr. Obinna Mba</h2>

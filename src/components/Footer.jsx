@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-gray-300 py-10">
@@ -20,25 +22,25 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="/" className="hover:text-white">
+              <li className="hover:text-blue-600 cursor-pointer">
+                <Link to="home" smooth={true} duration={500}>
                   Home
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="/about" className="hover:text-white">
+              <li className="hover:text-blue-600 cursor-pointer">
+                <Link to="about" smooth={true} duration={500}>
                   About Us
-                </a>
+                </Link>{" "}
               </li>
-              <li>
-                <a href="/projects" className="hover:text-white">
+              <li className="hover:text-blue-600 cursor-pointer">
+                <Link to="projects" smooth={true} duration={500}>
                   Projects
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="/contact" className="hover:text-white">
-                  Contact
-                </a>
+              <li className="hover:text-blue-600 cursor-pointer">
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>

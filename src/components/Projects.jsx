@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
+import Hero_image from "../images/Hero_image.jpg";
 import project_1 from "../images/project_1.jpg";
 import project_2 from "../images/project_2.jpg";
 import project_3 from "../images/project_3.jpg";
@@ -25,16 +26,26 @@ import project_22 from "../images/project_22.jpg";
 import project_23 from "../images/project_23.jpg";
 import project_24 from "../images/project_24.jpg";
 import project_25 from "../images/project_25.jpg";
+import project_26 from "../images/project_26.jpg";
+import project_27 from "../images/project_27.jpg";
+import project_28 from "../images/project_28.jpg";
+import project_29 from "../images/project_29.jpg";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   const showMore = () => {
-    setVisibleCount((prev) => prev + 3); // load 3 more on each click
+    setVisibleCount((prev) => prev + 9); // load 3 more on each click
   };
 
   const projects = [
+    {
+      id: 0,
+      title: "Luxury Apartment",
+      description: "A premium high-rise built with precision.",
+      image: Hero_image,
+    },
     {
       id: 1,
       title: "Luxury Apartment",
@@ -50,13 +61,14 @@ export default function Projects() {
     {
       id: 3,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
+      description:
+        "A 15-unit commercial residential complex, each with two-bedroom apartments",
       image: project_3,
     },
     {
       id: 4,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
+      description: "Single-story studio with a sky-facing veranda.",
       image: project_4,
     },
     {
@@ -80,7 +92,7 @@ export default function Projects() {
     {
       id: 8,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
+      description: "A 4 Bedroom Smart Deplex with void parlour.",
       image: project_8,
     },
     {
@@ -134,14 +146,20 @@ export default function Projects() {
     {
       id: 17,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
+      description: "Double-storey Bank of Industry complex.",
       image: project_17,
     },
     {
       id: 18,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
+      description: "Ministers Lodge of 4 bedroom.",
       image: project_18,
+    },
+    {
+      id: 19,
+      title: "Custom Villa",
+      description: "Tailored residential masterpiece.",
+      image: project_19,
     },
     {
       id: 20,
@@ -180,15 +198,37 @@ export default function Projects() {
       image: project_25,
     },
     {
-      id: 19,
+      id: 26,
+      title: "Church",
+      description:
+        "Cathedral building spanning two floors, designed to hold 5k people.",
+      image: project_26,
+    },
+    {
+      id: 27,
       title: "Custom Villa",
-      description: "Tailored residential masterpiece.",
-      image: project_19,
+      description:
+        "Elegant architectural structure featuring a six-bedroom luxury mansion.",
+      image: project_27,
+    },
+    {
+      id: 28,
+      title: "School",
+      description:
+        "Proposed Sound Academy Secondary School, designed as a single-storey structure.",
+      image: project_28,
+    },
+    {
+      id: 29,
+      title: "Hospital",
+      description:
+        "Contemporary general hospital with specialist facilities on two floors",
+      image: project_29,
     },
   ];
   const hasMore = visibleCount < projects.length;
   return (
-    <section className="py-12 px-6 bg-gray-100">
+    <section name="projects" className="py-12 px-6 bg-gray-100">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
         Our Projects
       </h2>

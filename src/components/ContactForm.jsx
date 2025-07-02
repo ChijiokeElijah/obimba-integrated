@@ -25,7 +25,7 @@ export default function ContactForm() {
   };
 
   return (
-    <main className="bg-blue-950 p-6">
+    <main name="contact" className="bg-blue-950 p-6">
       <section className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4 text-gray-800">Contact Us</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
