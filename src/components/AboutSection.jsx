@@ -7,8 +7,8 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="flex-1 space-y-6">
-          <h2 className="text-3xl font-bold text-gray-800">
-            About Obimba Integrated Services
+          <h2 className="text-xl text-gray-800 font-bold text-center sm:text-3xl sm:text-left">
+            About <br /> <strong> Obimba Integrated Services</strong>
           </h2>
           <p className="text-gray-600 leading-relaxed">
             Founded in 2010, Obimba Integrated Services has been at the

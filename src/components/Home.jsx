@@ -44,7 +44,7 @@ export default function Home() {
               <div className=" flex w-8 h-0.5 bg-white top-20 font-semibold" />
               <span className="text-white font-semibold">Our Story</span>
             </div>
-            <h1 className="text-white text-xl text-justify sm:text-2xl">
+            <h1 className="text-white text-sm text-justify sm:text-2xl font-bold text-base">
               We redefine what's possible.
             </h1>
             <p className="text-white pt-3 text-sm text-left sm:text-xl">
