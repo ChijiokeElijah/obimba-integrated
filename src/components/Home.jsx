@@ -12,16 +12,16 @@ export default function Home() {
  
   
   return (
-    <main name="home" className=" text-black p-10 ">
+    <main name="home" className=" text-black p-5 bg-gray-600 ">
       {/* HERO SECTION */}
-      <section className="relative min-h-screen mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-screen w-full sm:px-6 lg:px-8">
         <img
           src={Hero_image}
           alt="Hero"
           className="w-full h-full  object-cover absolute inset-0 min-h-screen"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-6">
-          <div>
+        <div className="absolute inset-0 flex items-center justify-center text-center">
+          <div className="w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white">
               Building the Future, Today
             </h1>
