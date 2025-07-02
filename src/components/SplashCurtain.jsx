@@ -22,7 +22,7 @@ const SplashCurtain = ({ onComplete }) => {
   if (phase === 'done') return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center text-white pointer-events-none">
+    <div className="fixed inset-0 z-50 flex items-center justify-center text-white pointer-events-none gap-4 text-center">
       {/* Welcome message with fade-out */}
       {(phase === "welcome" || phase === "slide") && (
         <div
@@ -30,13 +30,13 @@ const SplashCurtain = ({ onComplete }) => {
             phase === "slide" ? "opacity-0" : "opacity-100"
           }`}
         >
-          <img src={logo} className="h-50 w-50" />
+          <img src={logo} className="w-32 h-32 object-contain" />
           <h1
-            className={`text-xl text-center font-bold transition-all duration-500 ${
+            className={`text-xl sm:text-2xl md:text-3xl font-bold transition-all duration-500 ${
               phase === "slide" ? "scale-90 blur-sm" : "scale-100"
             }`}
           >
-            OBIMBA INTREGRATED SERVICES
+            OBIMBA INTEGRATED SERVICES
           </h1>
         </div>
       )}
