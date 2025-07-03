@@ -31,7 +31,7 @@ export default function Home() {
             </h2>
             <Link to="projects">
               <p className="inline-block bg-red-700 text-white px-6 mt-4 py-3 rounded-lg hover:bg-red-800 transition">
-                See our works
+                See our work
               </p>
             </Link>
           </div>
@@ -52,9 +52,9 @@ export default function Home() {
               unmatched craftsmanship, integrity, and over a decade of proven
               excellence in commercial and residential building.
             </p>
-            <Link to="recent">
+            <Link to="projects">
               <p className="inline-block bg-red-700 text-white px-6 py-3 mt-4 cursor-pointer rounded-lg hover:bg-red-800 transition">
-                See our works
+                See our work
               </p>
             </Link>
           </div>

@@ -30,14 +30,21 @@ import project_26 from "../images/project_26.jpg";
 import project_27 from "../images/project_27.jpg";
 import project_28 from "../images/project_28.jpg";
 import project_29 from "../images/project_29.jpg";
+import Loader from "../components/Loader";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(9);
-  const [isOpen, setIsOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   const showMore = () => {
-    setVisibleCount((prev) => prev + 9); // load 3 more on each click
+    setLoading(true);
+
+    // Simulate loading delay
+    setTimeout(() => {
+      setVisibleCount((prev) => prev + 1); // load 9 more
+      setLoading(false);
+    }, 1000); // 1 second delay
   };
 
   const projects = [
@@ -228,6 +235,8 @@ export default function Projects() {
     },
   ];
   const hasMore = visibleCount < projects.length;
+
+  if (loading) return <Loader />;
   return (
     <section name="projects" className="py-12 px-6 bg-gray-100">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
