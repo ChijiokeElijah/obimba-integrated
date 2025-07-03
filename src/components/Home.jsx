@@ -30,7 +30,7 @@ export default function Home() {
               Sustainability.
             </h2>
             <Link to="projects">
-              <p className="inline-block bg-red-700 text-white px-6 mt-4 py-3 rounded-lg hover:bg-red-800 transition">
+              <p className="inline-block bg-red-700 text-white px-6 mt-4 py-3 cursor-pointer rounded-lg hover:bg-red-800 transition">
                 See our work
               </p>
             </Link>

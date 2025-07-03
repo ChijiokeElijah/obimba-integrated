@@ -40,7 +40,7 @@ export default function AboutSection() {
             expectations.
           </p>
           <Link to="contact">
-            <p className="inline-block bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition">
+            <p className="inline-block bg-red-700 text-white px-6 py-3 cursor-pointer rounded-lg hover:bg-red-800 transition">
               Get in Touch
             </p>
           </Link>

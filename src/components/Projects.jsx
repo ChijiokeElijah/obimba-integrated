@@ -34,7 +34,7 @@ import Loader from "../components/Loader";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(9);
   const [loading, setLoading] = useState(false);
 
   const showMore = () => {
@@ -42,7 +42,7 @@ export default function Projects() {
 
     // Simulate loading delay
     setTimeout(() => {
-      setVisibleCount((prev) => prev + 1); // load 9 more
+      setVisibleCount((prev) => prev + 9); // load 9 more
       setLoading(false);
     }, 1000); // 1 second delay
   };
