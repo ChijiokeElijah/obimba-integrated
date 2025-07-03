@@ -12,7 +12,7 @@ export default function Home() {
  
   
   return (
-    <main name="home" className=" text-black p-5 bg-gray-600 ">
+    <main name="home" className=" text-black  bg-gray-600 ">
       {/* HERO SECTION */}
       <section className="relative min-h-screen w-full sm:px-6 lg:px-8">
         <img
@@ -52,8 +52,8 @@ export default function Home() {
               unmatched craftsmanship, integrity, and over a decade of proven
               excellence in commercial and residential building.
             </p>
-            <Link to="projects">
-              <p className="inline-block bg-red-700 text-white px-6 py-3 mt-4 rounded-lg hover:bg-red-800 transition">
+            <Link to="recent">
+              <p className="inline-block bg-red-700 text-white px-6 py-3 mt-4 cursor-pointer rounded-lg hover:bg-red-800 transition">
                 See our works
               </p>
             </Link>

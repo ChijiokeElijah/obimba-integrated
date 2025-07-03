@@ -6,6 +6,7 @@ import logo from "../images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [Open, setOpen] = useState(false);
 
   const links = [
     { name: "Home", to: "home" },

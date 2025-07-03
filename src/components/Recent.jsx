@@ -31,13 +31,12 @@ import project_27 from "../images/project_27.jpg";
 import project_28 from "../images/project_28.jpg";
 import project_29 from "../images/project_29.jpg";
 
-export default function Projects() {
+export default function Recent() {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(9);
-  const [isOpen, setIsOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const showMore = () => {
-    setVisibleCount((prev) => prev + 9); // load 3 more on each click
+    setVisibleCount((prev) => prev + 3); // load 3 more on each click
   };
 
   const projects = [
@@ -229,7 +228,7 @@ export default function Projects() {
   ];
   const hasMore = visibleCount < projects.length;
   return (
-    <section name="projects" className="py-12 px-6 bg-gray-100">
+    <section name="recent" className="py-12 px-6 bg-gray-100">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
         Our Projects
       </h2>

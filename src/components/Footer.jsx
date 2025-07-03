@@ -51,13 +51,11 @@ export default function Footer() {
               Contact Us
             </h4>
             <p className="text-sm mb-4">
-              001Ugwuorji Road Amaekpu
+              001 Ugwuorji Road Amaekpu
               <br />
               Ohafia, Abia State Nigeria
               <br />
               +234 706 199 1053
-              <br />
-              info@obimba.com
             </p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="hover:text-white">
