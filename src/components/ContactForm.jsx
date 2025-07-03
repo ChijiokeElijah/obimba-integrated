@@ -1,7 +1,12 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone_number: "",
+    message: "",
+  });
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -17,7 +22,7 @@ export default function ContactForm() {
       // example: await fetch("/api/contact", { method: "POST", body: JSON.stringify(form) });
       console.log("Form submitted:", form);
       setStatus("sent");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", phone_number: "", message: "" });
     } catch (err) {
       console.error(err);
       setStatus("error");
@@ -60,6 +65,22 @@ export default function ContactForm() {
               onChange={handleChange}
               className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="you@example.com"
+            />
+          </div>
+          {/* Phone Number*/}
+          <div>
+            <label htmlFor="phone_number" className="block text-gray-700 mb-1">
+              Phone Number
+            </label>
+            <input
+              id="phone_number"
+              name="phone_number"
+              type="phone_number"
+              required
+              value={form.phone_number}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Phone Number"
             />
           </div>
 

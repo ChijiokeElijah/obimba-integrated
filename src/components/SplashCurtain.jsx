@@ -32,7 +32,7 @@ const SplashCurtain = ({ onComplete }) => {
         >
           <img src={logo} className="w-32 h-32 object-contain" />
           <h1
-            className={`text-xl sm:text-2xl md:text-3xl font-bold transition-all duration-500 ${
+            className={`text-xl sm:text-2xl md:text-3xl font-bold text-yellow-500 transition-all duration-500 ${
               phase === "slide" ? "scale-90 blur-sm" : "scale-100"
             }`}
           >

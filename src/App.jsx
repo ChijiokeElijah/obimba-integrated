@@ -8,18 +8,25 @@ import Review from "./components/Review";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import SplashCurtain from "./components/SplashCurtain";
+
 function App() {
   const [showSplash, setShowSplash] = useState(true);
+
   return (
     <>
-      {showSplash && <SplashCurtain onComplete={() => setShowSplash(false)} />}
-      <NavBar />
-      <Home />
-      <AboutSection />
-      <Projects />
-      <Review />
-      <ContactForm />
-      <Footer />
+      {showSplash ? (
+        <SplashCurtain onComplete={() => setShowSplash(false)} />
+      ) : (
+        <>
+          <NavBar />
+          <Home />
+          <AboutSection />
+          <Projects />
+          <Review />
+          <ContactForm />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
