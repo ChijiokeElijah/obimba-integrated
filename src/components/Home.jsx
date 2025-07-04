@@ -25,7 +25,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold text-white">
               Building the Future, Today
             </h1>
-            <h2 className="mt-4 text-white text-lg md:text-xl text-bold">
+            <h2 className="mt-4 text-white text-lg md:text-xl font-bold">
               Obimba Integrated Services: Functionality. Safety. Aesthetics.
               Sustainability.
             </h2>

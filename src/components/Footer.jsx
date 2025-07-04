@@ -51,14 +51,18 @@ export default function Footer() {
               Contact Us
             </h4>
             <p className="text-sm mb-4">
-              001 Ugwuorji Road Amaekpu
+              No. 8 Obioma Executive Estate,
               <br />
-              Ohafia, Abia State Nigeria
+              Timber, Umuahia, Abia State, Nigeria.
               <br />
               +234 706 199 1053
             </p>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="hover:text-white">
+              <a
+                href="https://m.facebook.com/profile.php?id=61562771590314&name=xhp_nt__fb__action__open_user"
+                aria-label="Facebook"
+                className="hover:text-white"
+              >
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
