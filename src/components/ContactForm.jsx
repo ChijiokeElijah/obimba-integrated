@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -23,9 +25,11 @@ export default function ContactForm() {
       console.log("Form submitted:", form);
       setStatus("sent");
       setForm({ name: "", email: "", phone_number: "", message: "" });
+      toast.success("Thank you! We will be in touch shortly!");
     } catch (err) {
       console.error(err);
       setStatus("error");
+      toast.error("Oops, something went wrong.");
     }
   };
 
@@ -110,11 +114,11 @@ export default function ContactForm() {
             >
               {status === "sending" ? "Sending…" : "Send Message"}
             </button>
-            {status === "sent" && (
+            {/* {status === "sent" && (
               <span className="text-red-950">
                 Thank you! We’ll be in touch.
               </span>
-            )}
+            )} */}
             {status === "error" && (
               <span className="text-red-600">Oops, something went wrong.</span>
             )}

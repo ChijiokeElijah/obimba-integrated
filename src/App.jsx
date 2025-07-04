@@ -8,7 +8,10 @@ import Review from "./components/Review";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import SplashCurtain from "./components/SplashCurtain";
-import SplashScreen from "./components/SplashScreen";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// import SplashScreen from "./components/SplashScreen";
 
 function App() {
   // const [showSplash, setShowSplash] = useState(true);
@@ -32,6 +35,17 @@ function App() {
           <Review />
           <ContactForm />
           <Footer />
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </>
       )}
     </>
